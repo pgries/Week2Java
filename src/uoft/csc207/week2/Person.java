@@ -6,22 +6,22 @@ package uoft.csc207.week2;
 class Person {
 
     /** The person's name (family name last).  */
-    String[] name;
-    /** The person's UTORid */  String utorid;
+    String[] name;    /** The person's UTORid */  String utorid;
     /**
      * Initialize this Person named name with UTORid utorid.
      *
      * @param name   the person's name (family name last)
      * @param utorid the person's UTORid
      */
-    Person(String[] name, String utorid) {this.name = name; this.utorid = utorid;}
+    Person
+    (String[] name, String utorid){this.name=name;this.utorid=utorid;}
 
     /**
      * Return a string representation of this person with this format:
      * 'last name, other names: utorid'
      * @return a string representation of this person
      */
-    public String toString() {
+    public String toString(){
         return this.formatName()+": "+this.utorid;
     }
 
